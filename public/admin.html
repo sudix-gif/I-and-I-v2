@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>I&I Admin Panel</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>👑 I&I Admin Panel</h1>
+
+<form id="postForm">
+
+<input
+type="text"
+id="username"
+placeholder="Admin Username"
+required>
+
+<br><br>
+
+<input
+type="password"
+id="password"
+placeholder="Admin Password"
+required>
+
+<br><br>
+
+<select id="type">
+
+<option value="text">Text</option>
+
+<option value="photo">Photo</option>
+
+<option value="video">Video</option>
+
+<option value="audio">Audio</option>
+
+</select>
+
+<br><br>
+
+<input
+type="text"
+id="title"
+placeholder="Post Title">
+
+<br><br>
+
+<textarea
+id="content"
+rows="6"
+placeholder="Write post..."></textarea>
+
+<br><br>
+
+<button
+id="submitBtn"
+type="submit">
+
+Publish
+
+</button>
+
+</form>
+
+<p id="message"></p>
+
+<hr>
+
+<h2>📰 Posts</h2>
+
+<button onclick="loadPosts()">
+
+Load Posts
+
+</button>
+
+<div id="adminPosts"></div>
+
+<hr>
+
+<h2>👥 Users</h2>
+
+<button onclick="loadUsers()">
+
+Load Users
+
+</button>
+
+<div id="users"></div>
+
+<hr>
+
+<h2>📊 Statistics</h2>
+
+<button onclick="loadStats()">
+
+Load Statistics
+
+</button>
+
+<div id="stats"></div>
+
+<hr>
+
+<h2>💡 Topics</h2>
+
+<button onclick="loadTopics()">
+
+Load Topics
+
+</button>
+
+<div id="topics"></div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>I&I Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>I&I Social</h1>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</header>
+
+<section class="profile">
+
+<h2 id="welcome"></h2>
+
+<p id="subscription"></p>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Create Topic</h2>
+
+<input
+type="text"
+id="topic"
+placeholder="Suggest a topic">
+
+<button onclick="submitTopic()">
+Submit
+</button>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Posts</h2>
+
+<div id="posts"></div>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
